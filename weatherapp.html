@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My weather app</title>
+<style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg")
+      
+    }
+    .content {
+      margin:15%;
+      top: 80px;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    .search {
+      width: 500px;
+      height: 50px;
+      background-color: #f6f6fa;
+      border-style: none;
+    }
+    .button {
+      width: 100px;
+      height: 50px;
+      background-color: #7d52ef;
+      border-style: none;
+      color: white;
+      border-radius: 3px;
+    }
+    .button:hover {
+      opacity: 0.6;
+      scale: 1.1;
+    }
+    .current-temp {
+      font-weight: bold;
+      font-size: 60px;
+      position:static;
+      top: 140px;
+      left: 650px;
+    }
+    .current-city {
+      font-size: 28;
+    }
+    footer p {
+      text-align: center;
+    }
+    .weather1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    span {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <header>
+      <form>
+        <input
+          class="search"
+          type="search"
+          placeholder="Enter a city.."
+          required
+        />
+        <input class="button" type="submit" value="Search" />
+      </form>
+    </header>
+    <main>
+      <div class="weather1">
+        <div class="current-weather">
+          <div class="current-city">
+            <h1>Paris</h1>
+            <p>
+              Saturday 15:32, moderate rain <br />
+              Humidity: <strong><span>87%</span></strong
+              >, Wind: <strong><span>7.2km/h</span></strong>
+            </p>
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+        <div class="weather1">
+          <div class="current-temp">
+            <small
+              ><small
+                ><small><small>🌞</small></small></small
+              ></small
+            >14°C
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="#" target="_blank">Tsamaile Lebitsa</a> and is
+        <a href="#" target="_blank"> on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
